@@ -4,5 +4,11 @@ namespace App\Repositories\Users;
 
 interface UserRepositoryInterface
 {
-    public function checkRole($userId);
+    /**
+     * Check user/admin function
+     *
+     * @param $userId
+     * @return mixed
+     */
+    public function checkRole($userEmail);
 }
