@@ -13,4 +13,25 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\Admin\AuthController::class, "index"]);
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/test', [\App\Http\Controllers\Admin\AuthController::class, "index"]);
+
+Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'loginForm']);
+
+Route::post('/login', [\App\Http\Controllers\Admin\AuthController::class, 'processLogin']);
+
+Route::get('/signup', [\App\Http\Controllers\Admin\AuthController::class, 'signupForm']);
+
+Route::post('/signup', [\App\Http\Controllers\Admin\AuthController::class, 'processSignup']);
+
+Route::group(["prefix" => "admin"], function () {
+    Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'loginAdminForm']);
+
+    Route::post('/login', [\App\Http\Controllers\Admin\AuthController::class, 'processAdminLogin']);
+
+    Route::get('/dashboard', [\App\Http\Controllers\Admin\DashboardController::class, 'dashboard']);
+});
+
