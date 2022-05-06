@@ -29,7 +29,7 @@ class Comment extends Model
     }
 
     /**
-     * Relationship with user table
+     * Relationship with users table
      *
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

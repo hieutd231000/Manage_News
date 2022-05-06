@@ -7,7 +7,7 @@
 
     <!-- Sidebar -->
     <div class="sidebar">
-        <!-- Sidebar user panel (optional) -->
+        <!-- Sidebar users panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
@@ -31,7 +31,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{url("/admin/news")}}" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
                         <p>
                             News
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="pages/widgets.html" class="nav-link">
+                    <a href="{{url("/admin/users")}}" class="nav-link">
                         <i class="nav-icon fas fa-user"></i>
                         <p>
                             Users

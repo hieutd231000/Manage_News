@@ -5,7 +5,7 @@ namespace App\Repositories\Users;
 interface UserRepositoryInterface
 {
     /**
-     * Check user/admin function
+     * Check users/admin function
      *
      * @param $userId
      * @return mixed
