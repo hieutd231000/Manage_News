@@ -17,7 +17,7 @@ class UserEloquentRepository extends EloquentRepository implements UserRepositor
     }
 
     /**
-     * Check admin(0)/user(1) function
+     * Check admin(0)/users(1) function
      *
      * @param $userId
      * @return bool|void
@@ -33,7 +33,7 @@ class UserEloquentRepository extends EloquentRepository implements UserRepositor
     }
 
     /**
-     * Split user email function
+     * Split users email function
      *
      * @param $userEmail
      * @return string

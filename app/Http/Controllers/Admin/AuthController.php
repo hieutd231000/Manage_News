@@ -82,7 +82,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Show user login form
+     * Show users login form
      *
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
@@ -93,7 +93,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Process user login form
+     * Process users login form
      *
      * @param Request $request
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|void

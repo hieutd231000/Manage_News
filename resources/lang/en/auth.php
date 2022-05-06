@@ -8,7 +8,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | The following language lines are used during authentication for various
-    | messages that we need to display to the user. You are free to modify
+    | messages that we need to display to the users. You are free to modify
     | these language lines according to your application's requirements.
     |
     */
@@ -19,4 +19,9 @@ return [
     'signup_success' => 'Sign up success',
     'signup_failed' => 'Sign up failed',
     'login_failed' => 'Log in failed',
+    'empty' => 'Data not found',
+    'delete' => [
+        'failed' => "Failed to delete",
+        'success' => "Success to delete"
+    ]
 ];
